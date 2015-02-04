@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="result1">Result: </string>
+    <string name="app_name">Best Random Number Generator 2</string>
+    <string name="action_settings">Settings</string>
+    <string name="Label1">Enter First Number:</string>
+    <string name="hint_lower_limit">Lower Limit</string>
+    <string name="Label2">Enter Second Number</string>
+    <string name="hint_upper_limit">Upper Limit</string>
+    <string name="Label3">How many numbers to generate:</string>
+    <string name="radio_1">1</string>
+    <string name="radio_2">2</string>
+    <string name="radio_3">3</string>
+    <string name="radio_5">5</string>
+    <string name="radio_4">4</string>
+    <string name="button_flip">Flip Coin</string>
+    <string name="button_randomize">Randomize!</string>
+    <string name="button_dice">Dice Roll</string>
+    <string name="hint_ENumber">Max of 10</string>
+
+    <string-array name="numbers">
+
+        <item>1</item>
+
+        <item>2</item>
+
+        <item>3</item>
+
+        <item>4</item>
+
+        <item>5</item>
+
+        <item>6</item>
+
+        <item>7</item>
+
+        <item>8</item>
+
+        <item>9</item>
+
+        <item>10</item>
+
+    </string-array>
+
+</resources>
+
+
+
+

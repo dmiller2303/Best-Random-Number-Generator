@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    android:id="@+id/widget36"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Label1"
+        android:id="@+id/firsttv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="6dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_lower_limit"
+        android:id="@+id/lowerlimit"
+        android:inputType="number"
+        android:layout_below="@+id/firsttv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Label2"
+        android:id="@+id/secondtv"
+        android:layout_below="@+id/lowerlimit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="6dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_upper_limit"
+        android:id="@+id/upperlimit"
+        android:inputType="number"
+        android:layout_below="@+id/secondtv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Label3"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/upperlimit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="6dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:id="@+id/radioNumSel">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio1"
+            android:text="@string/radio_1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio2"
+            android:text="@string/radio_2"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio3"
+            android:text="@string/radio_3"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio4"
+            android:text="@string/radio_4"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio5"
+            android:text="@string/radio_5"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_flip"
+        android:id="@+id/FCbutton"
+        android:layout_below="@+id/radioNumSel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onFlipButtonClick"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_randomize"
+        android:id="@+id/RanButton"
+        android:layout_below="@+id/radioNumSel"
+        android:layout_toRightOf="@+id/FCbutton"
+        android:layout_toEndOf="@+id/FCbutton"
+        android:layout_toLeftOf="@+id/DRbutton"
+        android:onClick="onRanButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_dice"
+        android:id="@+id/DRbutton"
+        android:layout_alignBottom="@+id/RanButton"
+        android:layout_alignParentRight="true"
+        android:onClick="onDiceButtonClick"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/result"
+       android:textStyle="bold"
+       android:textSize="25sp"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/FCbutton"
+       android:padding="6dp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number_select_spinner"
+        android:layout_toRightOf="@+id/radioNumSel"
+        android:layout_toEndOf="@+id/radioNumSel"
+        android:layout_above="@+id/DRbutton"/>
+
+</RelativeLayout>
